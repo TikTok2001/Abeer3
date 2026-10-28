@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<title>Abeer | تواصل عبر واتساب</title>
+<meta name="description" content="تواصل مع Abeer عبر واتساب لحجز طلبك بسرعة.">
+<!-- خط Tajawal لتطابق الخط في التصميم -->
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!-- FontAwesome للأيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Tajawal',sans-serif;-webkit-tap-highlight-color:transparent}
+html,body{background:#0b0b0b;color:#fff;min-height:100vh}
+body{display:flex;justify-content:center;align-items:center;padding:15px;overflow-x:hidden}
+
+.card-container{
+    width:100%;
+    max-width:420px;
+    background:#121212;
+    border:1px solid #262626;
+    border-radius:35px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(230, 180, 80, 0.05);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.welcome-title{
+    font-size:22px;
+    color:#e6e6e6;
+    font-weight:500;
+    margin-bottom:5px;
+}
+
+.brand-name{
+    font-size:32px;
+    font-weight:800;
+    color:#f3be5d;
+    margin-bottom:25px;
+    letter-spacing:0.5px;
+}
+
+.logo-wrapper{
+    position:relative;
+    width:100px;
+    height:100px;
+    margin-bottom:25px;
+    text-decoration:none;
+}
+
+.logo-circle{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border:2px solid #f3be5d;
+    background-color:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(243, 190, 93, 0.2);
+}
+
+.logo-circle svg{
+    width:50px;
+    height:50px;
+    stroke:#f3be5d;
+}
+
+.badge-check{
+    position:absolute;
+    bottom:-2px;
+    right:8px;
+    background:#121212;
+    border-radius:50%;
+    padding:2px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.badge-check i{
+    color:#f3be5d;
+    font-size:16px;
+}
+
+.divider-container{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.divider-line{
+    width:100%;
+    height:1px;
+    background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
+}
+
+.divider-dot{
+    position:absolute;
+    width:8px;
+    height:8px;
+    background-color:#f3be5d;
+    border-radius:50%;
+    box-shadow:0 0 8px #f3be5d;
+}
+
+.action-title{
+    font-size:30px;
+    font-weight:800;
+    color:#ffffff;
+    margin-bottom:6px;
+}
+
+.action-subtitle{
+    font-size:20px;
+    font-weight:700;
+    color:#25d366;
+    margin-bottom:30px;
+}
+
+.whatsapp-main-btn{
+    width:150px;
+    height:150px;
+    background-color:#25d366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    margin-bottom:40px;
+    box-shadow:0 0 45px rgba(37, 211, 102, 0.45);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-main-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 60px rgba(37, 211, 102, 0.65);
+}
+
+.whatsapp-main-btn i{
+    color:#ffffff;
+    font-size:90px;
+}
+
+.gold-line{
+    width:100%;
+    height:3px;
+    background:linear-gradient(90deg, #6e5425 0%, #f3be5d 50%, #6e5425 100%);
+    border-radius:2px;
+    margin-bottom:25px;
+}
+
+.gold-button{
+    width:100%;
+    height:60px;
+    background:linear-gradient(180deg, #f7d283 0%, #e5a93c 100%);
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    text-decoration:none;
+    color:#000000;
+    box-shadow:0 6px 20px rgba(229, 169, 60, 0.3);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom:30px;
+}
+
+.gold-button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 25px rgba(229, 169, 60, 0.5);
+}
+
+.gold-button-left{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    background-color:rgba(0, 0, 0, 0.15);
+    border-radius:50%;
+}
+
+.gold-button-left i{
+    font-size:20px;
+    color:#121212;
+}
+
+.gold-button-text{
+    font-size:20px;
+    font-weight:800;
+    color:#000000;
+    flex-grow:1;
+    text-align:center;
+}
+
+.gold-button-right i{
+    font-size:20px;
+    color:#000000;
+}
+
+.instruction-text{
+    font-size:14px;
+    color:#8e8e8e;
+    line-height:1.5;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.phone-display{
+    font-size:16px;
+    color:#7a7a7a;
+    direction:ltr;
+    letter-spacing:1px;
+    font-weight:500;
+}
+
+@media (max-width:480px){
+    .card-container{padding:30px 18px}
+}
+</style>
+</head>
+<body>
+
+<main class="card-container">
+    
+    <!-- الترحيب واسم الصفحة -->
+    <div class="welcome-title">أهلاً بك في</div>
+    <div class="brand-name">Abeer</div>
+
+    <!-- الشعار مع علامة التوثيق -->
+    <a href="https://wa.me/972568657834?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D8%AF%D9%8A%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D9%88%D8%A7%D9%84%D8%B3%D8%B9%D8%B1">
+        <div class="logo-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+        </div>
+        <div class="badge-check">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+    </a>
+
+    <!-- فاصل نقطة -->
+    <div class="divider-container">
+        <div class="divider-line"></div>
+        <div class="divider-dot"></div>
+    </div>
+
+    <!-- نص الدعوة للتواصل -->
+    <div class="action-title">انقر هنا</div>
+    <div class="action-subtitle">وتواصل معنا عبر واتساب</div>
+
+    <!-- زر الواتساب الدائري الكبير -->
+    <a href="https://wa.me/972568657834?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D8%AF%D9%8A%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D9%88%D8%A7%D9%84%D8%B3%D8%B9%D8%B1" class="whatsapp-main-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- خط فاصل ذهبي -->
+    <div class="gold-line"></div>
+
+    <!-- الزر الذهبي للطلب -->
+    <a href="https://wa.me/972568657834?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D8%AF%D9%8A%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D9%88%D8%A7%D9%84%D8%B3%D8%B9%D8%B1" class="gold-button">
+        <div class="gold-button-left">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="gold-button-text">اضغط هنا للطلب</div>
+        <div class="gold-button-right">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+    </a>
+
+    <!-- النص السفلي والرقم -->
+    <div class="instruction-text">
+        اضغط على شعار المتجر أو شعار واتساب أو الزر لفتح المحادثة.
+    </div>
+
+    <div class="phone-display">972567747582</div>
+
+</main>
+
+</body>
+</html>
